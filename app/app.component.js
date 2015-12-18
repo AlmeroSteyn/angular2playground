@@ -43,8 +43,8 @@ System.register(['angular2/core', './hero-detail.component', './hero-form.compon
                     core_1.Component({
                         directives: [hero_detail_component_1.HeroDetailComponent, hero_form_component_1.HeroFormComponent],
                         selector: 'my-app',
-                        template: "<h1>{{title}}</h1>\n<h2>My Heroes</h2>\n<ul class=\"heroes\">\n    <li *ngFor=\"#hero of heroes\"\n        [class.selected]=\"hero === selectedHero\"\n        (click)=\"onSelect(hero)\">\n        <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n    </li>\n</ul>\n<my-hero-detail [hero]=\"selectedHero\"></my-hero-detail>\n<hero-form></hero-form>\n    ",
-                        styles: ["\n  .heroes {list-style-type: none; margin-left: 1em; padding: 0; width: 10em;}\n  .heroes li { cursor: pointer; position: relative; left: 0; transition: all 0.2s ease; }\n  .heroes li:hover {color: #369; background-color: #EEE; left: .2em;}\n  .heroes .badge {\n    font-size: small;\n    color: white;\n    padding: 0.1em 0.7em;\n    background-color: #369;\n    line-height: 1em;\n    position: relative;\n    left: -1px;\n    top: -1px;\n  }\n  .selected { background-color: #EEE; color: #369; }\n"]
+                        templateUrl: 'app/app.component.html',
+                        styleUrls: ['app/app.component.css']
                     }),
                     __param(1, core_2.Inject('app.config')), 
                     __metadata('design:paramtypes', [hero_service_1.HeroService, Object])
